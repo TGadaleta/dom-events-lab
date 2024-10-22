@@ -30,7 +30,7 @@ calculator.addEventListener('click', (event) => {
         workingNum = ''
     }
 
-    if (event.target.innerText === '='){
+    if (event.target.classList.contains('equals')){
         memory.push(parseInt(workingNum))
         result = memory[0]
         for (let i = 1;i<memory.length;i++){
