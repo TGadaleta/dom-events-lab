@@ -22,7 +22,8 @@ function checkIfNum(event){
 function checkIfOperator(event){
     if (event.target.classList.contains('operator')) { //if the button is an operator
         if (event.target.innerText==='C'){ //if its specifically the C button
-            memory=[] //reset our memory array to an empty array
+            console.log('hit clear')
+            memory.length = 0 //reset our memory array to an empty array
             display.textContent = '' //clear our display
         }
         else { //if it is any other operator button
